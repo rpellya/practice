@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header,aside {display: block;} 
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0:border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration:none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+body{ 
+    background-color: rgb(232, 232, 232);
+}
+.Layer-0 {
+    margin: 0 auto;
+    width: 1080px;
+    height: 1920px;
+    padding: 106px 108px 137px 142px;
+    background: url('../img/ellipse_1_copy_4.png') 50px 128px/auto 54% no-repeat;
+
+}
+.Travel{   
+    width: 67px;
+    height: 10px; 
+    margin: 0 392px 28px 382px;
+    text-align: center;
+    opacity: 0.6;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #273d46;
+}
+.Donec-sed-odio-dui-Cras-mattis-consectetur-purus-sit-amet-ferm {
+    width: 760px;
+    height: 75px;
+    margin: 28px 62px 77px 58px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: center;
+    color: var(--dark-grey-blue);
+}
+
+.light-man-copy{
+    background-image: url('../img/light_man_copy_26.png');
+    outline: 10px solid #fff;
+    box-shadow: 0px 15px 65px 0px rgba(15, 16, 16, 0.25 );
+
+    width: 821px;
+    height: 541px;
+
+}
+
+.Donec-aredsed-odio-dui-Morbi-leo-risus-porta-ac-consectetur-a {
+    height: 257px;
+    width: 736px;
+    margin: 62px 28px 28px 58px;
+    opacity: 0.8;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #273d46;
+}
+.list{
+    margin: 64px;
+}
+.list li{
+    margin: 0 0 7px 0;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: Arial;
+    background: url(../img/check_icon_37.png) left no-repeat ;
+    padding: 0 0 0 32px;
+}
+.li-1{
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    color: #273d46;
+}
+.li-2{
+    font-style: italic;
+    color: #80b7b3;
+}
+.li-3{
+    font-weight: 700;
+    color: #273d46;
+}
+.li-4{
+    text-decoration:line-through;
+    color: #273d46;
+}
+
+.p2{
+    margin: 70px 0 0 0;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.list2{
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    color: #273d46;
+    margin: 0 0 0 64px;
+}
+
+.list2 li{
+    margin: 0 0 7px 0;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: Arial;
+    background: url(../img/check_icon_37.png) left no-repeat ;
+    padding: 0 0 0 32px;
+}
+
+.list2 li:nth-child(2):hover{
+    color: red;
+}
+
+.fullstory{
+    background: rgba(128,183,179, 0.9) url('../img/shape_2_9.png') 155px 13px no-repeat;
+    border-radius: 70px;
+    
+    margin: 50px 0 30px 69px;
+
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    width: 199px;
+    height: 44px;
+}
+
+.fullstory p{
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    line-height: 2.86;
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    width: 140px;
+    height: 10px;
+    margin: 6px 8px 1px 20px;
+}
+
+.shape{
+    background: url('../img/shape_2_9.png');
+}
+
+.fullstory:hover{
+    background-color: #3a5856;
+}
+
+.fullstory:active{
+    background-color: #818181;
+}
+
+.textinput{
+    border: solid 1px #b0b0b0 ;
+    width: 292px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 27px 0 54px;
+
+}
+
+.textinput:focus{
+    border: solid 1px #7fbed5;
+    box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128,183,179, 0.9);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(76, 109, 107, 0.9);
+}
