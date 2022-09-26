@@ -2,3 +2,44 @@
 
 @import url(nul);
 
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.block {
+   --shadow: 0 2px 4px rgba(0,0,0,1);
+   height: 100vh;
+   color: white;
+   padding-top: 30vh;
+   padding-left: 15vw;
+   position: relative;
+}
+.bg {
+   background: #444 url('https://asiamountains.net/upload/slide/slide-1960x857-07.jpg');
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0; 
+   z-index: -1;
+   filter: saturate(88%) brightness(50%);
+}
+.tittle {
+   display: inline-block;
+   font-size: 4vw;
+   text-transform: uppercase;
+   letter-spacing: 1vw;
+   text-shadow: var(--shadow);
+   position: relative;
+   &::after{
+      content: '';  
+      display: block;
+      left: 0;
+      bottom: -1.5vw; 
+      right: -4vw; 
+      height: 0.4vw;
+      background-color: #fff;
+      text-shadow: var(--shadow);
+   }
+}
