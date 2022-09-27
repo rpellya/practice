@@ -1,11 +1,6 @@
 //Подключение обнуляющего списка
 
-@import url(nul);
-
-*{
-   margin: 0;
-   box-sizing: border-box;
-}
+@import "nullstyle.scss";
 
 .block {
    --shadow: 0 2px 4px rgba(0,0,0,1);
