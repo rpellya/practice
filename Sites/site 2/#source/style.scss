@@ -21,10 +21,9 @@
       }
       &:nth-child(3){
          width: 70vw;
-         min-width: 1000%;
          left: -120%;
-         background: url('https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-06/Exotic-tropical-beach-sunse.jpg') 100% 50% / cover;
-
+         background: url('https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-06/Exotic-tropical-beach-sunse.jpg') 100% 100% / cover;
+         transition: all 0.18s ease-in-out;
       }
    }
  }
