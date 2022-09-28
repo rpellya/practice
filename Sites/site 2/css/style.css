@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .block > div {
-  width: 700px;
+  width: 50vw;
   background-color: #333;
   position: relative;
   left: -50%;
@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 .block > div:nth-child(3) {
-  width: 70vw;
+  max-width: 100vw;
+  min-width: 40vw;
   left: -120%;
   background: url("https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-06/Exotic-tropical-beach-sunse.jpg") 100% 100%/cover;
   transition: all 0.18s ease-in-out;
