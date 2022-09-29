@@ -108,11 +108,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .line {
+  position: absolute;
+  background-color: white;
   top: 6%;
-  height: 50%;
+  bottom: 50%;
   right: 35%;
   width: 2px;
-  background-color: white;
-  position: absolute;
   transform: rotate(-45deg);
 }
