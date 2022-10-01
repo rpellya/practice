@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block > div {
   width: 700px;
-  background-color: rgba(150, 92, 173, 0.712);
+  background-color: rgb(150, 92, 173);
   position: relative;
   left: -50%;
   z-index: 1;
