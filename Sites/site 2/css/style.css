@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  background-color: rgb(42, 35, 44);
+}
+
 .block {
   height: 600px;
   display: grid;
@@ -132,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item {
-  font-size: 14px;
+  font-size: 16px;
   max-width: 300px;
   position: relative;
   padding-left: 20px;
@@ -151,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  font-size: 32px;
+  font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: rgb(95, 5, 83);

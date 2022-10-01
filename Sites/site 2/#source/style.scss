@@ -1,6 +1,10 @@
 //Подключение обнуляющего списка
  @import "nullstyle.scss";
 
+body{
+   background-color: rgb(42, 35, 44);
+}
+
  .block{
    height: 600px;
    display: grid;
@@ -59,7 +63,7 @@
    }
 }
 .item{
-   font-size: 14px;
+   font-size: 16px;
    max-width: 300px;
    position: relative;
    padding-left: 20px;
@@ -77,7 +81,7 @@
    }
 }
 .title{
-   font-size: 32px;
+   font-size: 36px;
    text-transform: uppercase;
    letter-spacing: 10px;
    color: rgb(95, 5, 83);
