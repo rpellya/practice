@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #7522E6, #2619E6);
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider-items {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
