@@ -5,23 +5,31 @@
     border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
     outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
     outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
     display: block;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -32,7 +40,9 @@ html, body {
     -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
     font-family: inherit;
 }
 
@@ -49,7 +59,8 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
 }
 
@@ -65,7 +76,12 @@ img {
     vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
     font-weight: inherit;
 }
@@ -81,64 +97,68 @@ h1, h2, h3, h4, h5, h6 {
     src: url("../fonts/Robotobold.ttf");
     font-weight: bold;
 }
-body{
+*::selection {
+    color: rgb(255, 255, 255);
+    background: #000;
+}
+body {
     font-family: Roboto, sans-serif;
 }
-.header{
-    border-bottom: 1px solid #E5E5E5;
+.header {
+    border-bottom: 1px solid #e5e5e5;
     padding: 25px 0;
 }
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.header .container{
+.header .container {
     display: flex;
     align-items: center;
 }
-.logo img{
+.logo img {
     vertical-align: bottom;
 }
-.menu{
+.menu {
     margin-left: 244px;
 }
-.menu ul{
+.menu ul {
     display: flex;
 }
-.menu-item{
+.menu-item {
     margin-right: 115px;
 }
-.menu-item a{
+.menu-item a {
     font-size: 15px;
     color: #030305;
 }
-.menu-item a:hover{
+.menu-item a:hover {
     border-bottom: 2px solid black;
 }
-.main{
+.main {
     background-image: url("../img/background.png");
     background-position: center;
     background-size: cover;
-    padding: 104px 0 154px 0;
+    padding: 104px 66px 231px 0;
 }
-.main-info{
+.main-info {
     max-width: 855px;
 }
-.main-title{
+.main-title {
     font-weight: bold;
     font-size: 80px;
     line-height: 110%;
     color: #030305;
     margin-bottom: 40px;
 }
-.main-text{
+.main-text {
     font-size: 16px;
     line-height: 130%;
     color: #030305;
     margin-bottom: 40px;
     max-width: 502px;
 }
-.button{
+.button {
     padding: 20px;
     width: 334px;
     height: 64px;
@@ -149,36 +169,36 @@ body{
     font-size: 16px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    transition: background-color .5s;
+    color: #ffffff;
+    transition: background-color 0.5s;
 }
-.button:hover{
+.button:hover {
     background: #575757;
 }
-.car{
-    padding: 100px 0;
+.car {
+    padding: 50px 0;
 }
-.sub-title{
+.sub-title {
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
     color: #030305;
 }
-.car-items{
+.car-items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.car-item{
+.car-item {
     max-width: 384px;
     text-align: center;
     margin-top: 40px;
 }
-.car-item-image img{
+.car-item-image img {
     vertical-align: bottom;
 }
-.car-item-title{
+.car-item-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 150%;
@@ -186,83 +206,83 @@ body{
     color: #030305;
     padding: 15px 0 17px 0;
 }
-.car-item-info{
+.car-item-info {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.car-item-point{
+.car-item-point {
     width: 110px;
     height: 92px;
     margin: 0 7.5px;
     line-height: 130%;
 }
-.car-item-point > div:nth-child(2){
+.car-item-point > div:nth-child(2) {
     font-weight: bold;
 }
-.car-item-point img{
+.car-item-point img {
     margin-bottom: 11px;
 }
-.car-item-action{
+.car-item-action {
     margin-top: 13px;
 }
-.car-item-action .button{
+.car-item-action .button {
     width: 100%;
     padding: 15px;
     height: 54px;
 }
-.price{
+.price {
     overflow: hidden;
 }
-.price .container{
+.price .container {
     position: relative;
     padding-bottom: 121px;
 }
-.price .sub-title{
+.price .sub-title {
     margin-bottom: 20px;
 }
-.price-text{
+.price-text {
     font-size: 16px;
     line-height: 130%;
-    color: #5D5D5F;
+    color: #5d5d5f;
     margin-bottom: 60px;
 }
-.price-form{
+.price-form {
     max-width: 344px;
 }
-.price-input{
+.price-input {
     padding: 22px 18px;
     width: 344px;
     height: 65px;
-    background: #FFFFFF;
-    border: 1px solid #5D5D5F;
+    background: #ffffff;
+    border: 1px solid #5d5d5f;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
     outline: none;
     margin-bottom: 15px;
 }
-.price-input::placeholder{
+.price-input::placeholder {
     color: #5d5d5f;
 }
-.price .button{
+.price .button {
     width: 100%;
 }
-.price-image{
+.price-image {
     position: absolute;
     bottom: 0;
     left: 401px;
 }
-.footer{
-    border-top: 1px solid #E5E5E5;
+.footer {
+    border-top: 1px solid #e5e5e5;
     padding: 25px 0;
 }
-.footer .container{
+.footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.rights{
+.rights {
     font-size: 15px;
     color: #030305;
 }
