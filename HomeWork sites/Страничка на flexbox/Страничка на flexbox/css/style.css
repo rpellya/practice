@@ -6,23 +6,31 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -33,7 +41,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -50,7 +60,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -66,7 +77,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -81,6 +97,11 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.conteiner {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .content {
@@ -101,32 +122,158 @@ body {
 }
 .hi__tittle {
   text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 59px;
-  text-align: left;
+  font-size: 60px;
   margin: 0 0 38px 0;
 }
-.hi__img {
-  background: url("http://www.myalexandriya.com/wp-content/uploads/2021/12/maxresdefault-3.jpg") 0 0 no-repeat;
+.hi__img img {
+  max-width: 469px;
 }
 
-.conteiner {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.list li {
+.hi__list li {
   background: url("/img/check_icon_346.png") 0 1px no-repeat;
   font-size: 20px;
   line-height: 22px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-  padding: 0 0 0 25px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  padding: 0 0 0 36px;
   margin: 0 0 17px 0;
 }
 .list li li:last-child {
   margin: 0;
 }
 
+.what {
+  padding: 50px 0;
+}
+.what__row {
+  display: flex;
+}
+.what__image {
+  flex: 0 0 430px;
+}
+.what__image img {
+  max-width: 100%;
+}
+.what__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 38px;
+}
+.what__title {
+  margin: 0 0 33px 0;
+}
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+}
+.what__text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.columns {
+  background-color: #f5f5f5;
+  padding: 50px 0 20px 0;
+}
+.columns__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.columns__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.columns__column {
+  padding: 0 8px;
+  flex: 0 1 50%;
+  margin-bottom: 30px;
+}
+.item__row {
+  display: flex;
+}
+.item__image {
+  flex: 0 0 200px;
+}
+.item__body {
+  flex: 1 1 auto;
+  padding: 0 0 0px 15px;
+}
+.item__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #445161;
+  margin-bottom: 13px;
+}
+.item__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.vertical {
+  padding: 50px 0;
+}
+.vertical__title {
+  text-align: center;
+  margin: 0px 0px 30px 0;
+}
+.vertical__body {
+  max-width: 990px;
+  margin: 0 auto;
+}
+.vertical__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+.vertical__column {
+  padding: 0px 22.5px;
+  flex: 0 1 33.333%;
+  display: flex;
+}
+.vertical__item {
+  background-color: #445162;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #445162;
+  padding: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.vertical__subtitle {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 0;
+}
+.vertical__label {
+  text-align: center;
+  background-color: #fff;
+  color: #445162;
+  padding: 15px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.vertical__text {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  flex: 1 1 auto;
+}
+.vertical__bth {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0 20px;
+  background-color: #fff;
+  height: 40px;
+  color: #445161;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .footer {
   background-color: #f5f5f5;
 }
