@@ -1,7 +1,19 @@
 @import "nullstyle.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-.mainblock {
 
+
+.wrapper{
+   width: 100%;
+   min-width: 100%;
+   overflow: hidden;
+   flex-direction: column;
+}
+
+.mainblock {
+   flex: 1 1 auto;
+   position: relative;
+   justify-content: center;
+   align-items: center;
    &__conetnet {
    }
 
@@ -27,6 +39,11 @@
    }
 
    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
    }
 }
 .btn {
