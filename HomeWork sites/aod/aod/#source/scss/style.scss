@@ -1,0 +1,19 @@
+//<ПОДКЛЮЧАЕМ ШРИФТЫ>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+//<ШРИФТЫ ПО УМОЛЧАНИЮ>
+$fontfamily: "Lato";
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
+@import "nullstyle.scss";
+
+//<Оболочка>
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
+}
+
+//<Основная сетка>
+.conteiner{
+   max-width: 1130px;
+   padding: 0 15px;
+}
