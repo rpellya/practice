@@ -12,12 +12,16 @@ $fontfamily:"Lato";
    overflow: hidden;
    min-height: 100%;
 }
-
 //<Основная сетка>
 .conteiner{
    max-width: 1130px;
    padding: 0 15px;
 }
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+@import "ui.scss";
+
+
 
 //<Основной блок>
 .page {
