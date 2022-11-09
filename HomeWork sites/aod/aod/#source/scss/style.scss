@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 //<ШРИФТЫ ПО УМОЛЧАНИЮ>
-$fontfamily: "Lato";
+$fontfamily:"Lato";
+
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
 @import "nullstyle.scss";
 
@@ -16,4 +17,27 @@ $fontfamily: "Lato";
 .conteiner{
    max-width: 1130px;
    padding: 0 15px;
+}
+
+//<Основной блок>
+.page {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   flex-direction: column;
+}
+.main-screen {
+   flex: 1 0 100%;
+   position: relative;
+		&__bg {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+		}
+}
+.content {
 }
