@@ -1,35 +1,49 @@
 //<ПОДКЛЮЧАЕМ ШРИФТЫ>
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+//</ПОДКЛЮЧАЕМ ШРИФТЫ>
 
 //<ШРИФТЫ ПО УМОЛЧАНИЮ>
 $fontfamily:"Lato";
+//</ШРИФТЫ ПО УМОЛЧАНИЮ>
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
 @import "nullstyle.scss";
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
 
-//<Оболочка>
+//<ОБОЛОЧКА>
 .wrapper{
    overflow: hidden;
    min-height: 100%;
 }
-//<Основная сетка>
+//</ОБОЛОЧКА>
+
+//<ОСНОВНАЯ СЕТКА>
 .conteiner{
    max-width: 1130px;
    padding: 0 15px;
+   margin: 0 auto;
 }
+//</ОСНОВНАЯ СЕТКА>
+
+//<mixin>
+@import "mixin.scss";
+//</mixin>
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 @import "ui.scss";
+//@import "header.scss";
+//@import "footer.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 
-
-//<Основной блок>
+//<ОСНОВНОЙ БЛОК>
 .page {
    position: absolute;
    width: 100%;
    height: 100%;
    top: 0;
    left: 0;
+   display: flex;
    flex-direction: column;
 }
 .main-screen {
@@ -43,5 +57,5 @@ $fontfamily:"Lato";
          left: 0;
 		}
 }
-.content {
-}
+
+//</ОСНОВНОЙ БЛОК>

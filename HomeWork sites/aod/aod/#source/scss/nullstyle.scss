@@ -4,7 +4,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside,footer,section{display: block;}
-html,body{height:100%;width:100%;}
+html,body{height:100%;width:100%;font-family:$fontfamily;}
 body{font-size:100%;line-height:1;font-size:14px;font-family: $fontfamily; -ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 input,button,textarea{font-family:$fontfamily}
 input::-ms-clear{display: none;}
@@ -14,5 +14,5 @@ a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
