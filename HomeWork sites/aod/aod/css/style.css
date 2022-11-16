@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .menu__list li {
+  position: relative;
   padding: 0 37.5px;
 }
 .menu__list li:nth-child(2) {
@@ -129,6 +130,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__list li:nth-child(3) {
   padding: 0 37.5px 0 110px;
+}
+.menu__list li:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #4d4959;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -1.5px 0 0 0;
+}
+.menu__list li:nth-child(2):after, .menu__list li:last-child:after {
+  display: none;
 }
 .menu__list {
   font-size: 13px;
