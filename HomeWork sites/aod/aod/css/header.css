@@ -8,3 +8,19 @@
   justify-content: center;
   align-items: center;
 }
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #4d4959;
+}

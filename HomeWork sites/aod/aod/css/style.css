@@ -102,11 +102,42 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 100%;
   z-index: 50;
+  left: 0;
+  top: 35px;
 }
 .header__row {
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 85px;
 }
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate3d(-50%, 0px, 0px);
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list li {
+  padding: 0 37.5px;
+}
+.menu__list li:nth-child(2) {
+  padding: 0 110px 0 37.5px;
+}
+.menu__list li:nth-child(3) {
+  padding: 0 37.5px 0 110px;
+}
+.menu__list {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #4d4959;
+}
+
 .page {
   position: absolute;
   width: 100%;

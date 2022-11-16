@@ -2,16 +2,24 @@
    position: absolute;
    width: 100%;
    z-index: 50;
+   left: 0;
+   top: 35px;
+   
    &__row {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 85px;
    }
 
    &__menu {
    }
 
    &__logo {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      @include tr(-50%,0px,0px);
    }
 }
 .menu {
@@ -23,10 +31,23 @@
    }
 
    &__list {
+      display: flex;
+      li{
+         padding: 0 37.5px;
+         &:nth-child(2){
+            padding: 0 110px 0 37.5px;
+         }
+         &:nth-child(3){
+            padding: 0 37.5px 0 110px ;
+         }
+      }
    }
 
-   &__ls {
+   &__list {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: #4d4959;
    }
-}
-.icon-menu {
 }
