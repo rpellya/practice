@@ -227,20 +227,37 @@ $fontfamily:"Lato";
 //Slider
 .slider {
    background-color: #f7f7f7;
-   padding: 120px 0;
+   padding: 120px 0 60px 0;
    &__body {
    }
 
    &__item {
+      text-align: center;
    }
 
    &__icon {
+      margin: 0 0 35px 0;
    }
 
    &__title {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #353738;
+      margin: 0 0 20px 0;
+      span{
+         font-weight: 300;
+         color:#848789;
+      }
    }
 
    &__text {
+      text-align: center;
+      font-size: 24px;
+      line-height: 34px;
+      font-style: italic;
+      color: #848789;
    }
 }
 .container {

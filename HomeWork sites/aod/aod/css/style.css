@@ -98,6 +98,16 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+.slick-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
 .header {
   position: absolute;
   width: 100%;
@@ -421,5 +431,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider {
   background-color: #f7f7f7;
-  padding: 120px 0;
+  padding: 120px 0 60px 0;
+}
+.slider__item {
+  text-align: center;
+}
+.slider__icon {
+  margin: 0 0 35px 0;
+}
+.slider__title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #353738;
+  margin: 0 0 20px 0;
+}
+.slider__title span {
+  font-weight: 300;
+  color: #848789;
+}
+.slider__text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: italic;
+  color: #848789;
 }
