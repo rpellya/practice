@@ -11,10 +11,6 @@
       align-items: center;
       height: 85px;
    }
-
-   &__menu {
-   }
-
    &__logo {
       position: absolute;
       left: 50%;
@@ -27,14 +23,6 @@
    }
 }
 .menu {
-
-   &__icon {
-   }
-
-   &__body {
-
-   }
-
    &__list {
       display: flex;
       li{

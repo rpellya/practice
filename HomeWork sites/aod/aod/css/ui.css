@@ -7,13 +7,32 @@
   display: none;
 }
 
-.slick-slider {
-  position: relative;
+/*
+.slick-slider{
+   position: relative;
+   .slick-track, .slick-list {}
+   .slick-list{overflow: hidden;}
+   .slick-track{display: flex; align-items: flex-start;}
+   .slick-slide{}
+   .slick-dots{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li{
+         button{
+            font-size: 0;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 1px solid #c8c8c8;
+            background-attachment: #trancparent;
+         }
+         &.slick-active{
+            button{
+               background-color: #a9afb3;
+            }
+         }
+      }
+   }
 }
-.slick-slider .slick-list {
-  overflow: hidden;
-}
-.slick-slider .slick-track {
-  display: flex;
-  align-items: flex-start;
-}
+*/

@@ -21,6 +21,7 @@ function ibg(){
    });
 
    //SLIDERS
+   /*
    if($('.slider__body').length>0){
       $('.slider__body').slick({
          //autoplay: true,
@@ -38,4 +39,4 @@ function ibg(){
             settings: {}
          }]
       });
-   }
+   } */

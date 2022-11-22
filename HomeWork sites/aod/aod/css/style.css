@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100%;
 }
 
-.conteiner {
+.container {
   max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
@@ -98,16 +98,35 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.slick-slider {
-  position: relative;
+/*
+.slick-slider{
+   position: relative;
+   .slick-track, .slick-list {}
+   .slick-list{overflow: hidden;}
+   .slick-track{display: flex; align-items: flex-start;}
+   .slick-slide{}
+   .slick-dots{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li{
+         button{
+            font-size: 0;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 1px solid #c8c8c8;
+            background-attachment: #trancparent;
+         }
+         &.slick-active{
+            button{
+               background-color: #a9afb3;
+            }
+         }
+      }
+   }
 }
-.slick-slider .slick-list {
-  overflow: hidden;
-}
-.slick-slider .slick-track {
-  display: flex;
-  align-items: flex-start;
-}
+*/
 .header {
   position: absolute;
   width: 100%;
@@ -403,6 +422,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   transition: all 0.3s ease 0s;
   justify-content: center;
   align-items: center;
@@ -410,6 +430,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
+}
+.item__logo span {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
 }
 .item__image {
   position: absolute;
@@ -457,4 +485,33 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 34px;
   font-style: italic;
   color: #848789;
+}
+
+.shop__body {
+  display: flex;
+}
+.shop__column {
+  flex: 0 1 16.666%;
+}
+.shop__column_b {
+  flex: 0 1 33.333%;
+}
+.block-shop {
+  height: 100%;
+}
+.block-shop__row {
+  display: flex;
+}
+.block-shop__column {
+  flex: 0 1 50%;
+}
+.block-shop__item {
+  height: auto;
+  padding-bottom: 50%;
+}
+.block-shop__item_b {
+  padding-bottom: 200.5%;
+}
+.block-shop__item_l {
+  padding-bottom: 100%;
 }

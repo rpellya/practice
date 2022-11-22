@@ -18,7 +18,7 @@ $fontfamily:"Lato";
 //</ОБОЛОЧКА>
 
 //<ОСНОВНАЯ СЕТКА>
-.conteiner{
+.container{
    max-width: 1130px;
    padding: 0 15px;
    margin: 0 auto;
@@ -196,6 +196,7 @@ $fontfamily:"Lato";
       top: 0;
       left: 0;
       display: flex;
+      flex-direction: column;
       @include anim(0.3s,0s);
       justify-content: center;
       align-items: center;
@@ -203,6 +204,14 @@ $fontfamily:"Lato";
       z-index: 2;
       opacity: 0;
       visibility: hidden;
+      span{
+         margin-top: 10px;
+         font-size: 14px;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: 0.2em;
+         color: #ffffff;
+      }
    }
 
    &__image {
@@ -228,9 +237,6 @@ $fontfamily:"Lato";
 .slider {
    background-color: #f7f7f7;
    padding: 120px 0 60px 0;
-   &__body {
-   }
-
    &__item {
       text-align: center;
    }
@@ -260,7 +266,53 @@ $fontfamily:"Lato";
       color: #848789;
    }
 }
-.container {
+
+.shop {
+
+   &__body {
+      display: flex;
+   }
+
+   &__column {
+      flex: 0 1 16.666%;
+
+      &_b {
+         flex: 0 1 33.333%;
+      }
+   }
+
+   &__block {
+   }
+
+   &__footer {
+   }
+
+   &__btn {
+   }
 }
+.block-shop {
+   height: 100%;
+
+   &__row {
+      display: flex;
+      
+   }
+
+   &__column {
+      flex: 0 1 50% ;
+   }
+
+   &__item {
+      height: auto;
+      padding-bottom: 50%;
+      &_b{
+         padding-bottom: 200.5%;
+      }
+      &_l{
+         padding-bottom: 100%;
+      }
+   }
+}
+
 
 //</ОСНОВНОЙ БЛОК>
