@@ -275,6 +275,70 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.footer {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+.footer__column {
+  flex: 0 1 33.333%;
+}
+.footer__adress {
+  padding-right: 20px;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: #848789;
+}
+.footer__adress p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #848789;
+}
+@media (max-width: 1100px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__adress {
+    padding: 0;
+  }
+  .footer__social {
+    margin: 15px 0;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__link {
+  margin: 0 7.5px;
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.dev__text {
+  line-height: 17px;
+  font-style: italic;
+  color: #848789;
+  padding-right: 9px;
+}
 .page {
   position: absolute;
   width: 100%;
@@ -553,4 +617,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-shop__item_l {
   padding-bottom: 100%;
+}
+
+.subscribe__body {
+  padding: 110px 0;
+  max-width: 543px;
+  margin: 0px auto;
+  text-align: center;
+}
+.subscribe__logo {
+  margin-bottom: 39px;
+}
+.subscribe__label {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+.subscribe__form {
+  display: flex;
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  padding: 0 8px 0 0;
+}
+.subscribe__input .input {
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9;
+  font-size: 20px;
+  font-style: italic;
+  color: #929292;
+  padding: 0 28px;
+}
+.subscribe__input .input:focus {
+  font-style: normal;
+  color: #333;
+}
+.subscribe__button {
+  flex: 0 0 126px;
+}
+.subscribe__btn {
+  font-size: 24px;
+  line-height: 69px;
+  font-weight: 300;
+  width: 100%;
+  height: 69px;
+  background-color: #64c29e;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .subscribe__body {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 500px) {
+  .subscribe__input {
+    padding: 0 0 8px 0;
+  }
+  .subscribe__form {
+    display: block;
+  }
 }

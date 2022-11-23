@@ -33,7 +33,7 @@ $fontfamily:"Lato";
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 @import "ui.scss";
 @import "header.scss";
-//@import "footer.scss";
+@import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 
@@ -281,9 +281,6 @@ $fontfamily:"Lato";
       }
    }
 
-   &__block {
-   }
-
    &__footer {
       background: #282f35;
       padding: 77px 0;
@@ -328,10 +325,9 @@ $fontfamily:"Lato";
    height: 100%;
 
    &__row {
-      display: flex;
-      
+      display: flex;   
    }
-
+   
    &__column {
       flex: 0 1 50% ;
    }
@@ -347,6 +343,78 @@ $fontfamily:"Lato";
       }
    }
 }
+
+.subscribe {
+
+   &__body {
+      padding: 110px 0;
+      max-width: 543px;
+      margin: 0px auto;
+      text-align: center;
+   }
+
+   &__logo {
+      margin-bottom: 39px;
+   }
+
+   &__label {
+      color: #848789;
+      font-size: 24px;
+      font-style: italic;
+      margin-bottom: 35px;
+   }
+
+   &__form {
+      display: flex;
+   }
+
+   &__input {
+      flex: 1 1 auto;
+      padding:0 8px 0 0;
+      .input{
+         width: 100%;
+         height: 69px;
+         background-color: #ffffff;
+         border: 1px solid #d3d7d9;
+         font-size: 20px;
+         font-style: italic;
+         color: #929292;
+         padding: 0 28px;
+         &:focus{
+            font-style: normal;
+            color: #333;
+         }
+      }
+   }
+
+   &__button {
+      flex: 0 0 126px;
+   }
+   &__btn{
+      font-size: 24px;
+      line-height: 69px;
+      font-weight: 300;
+      width: 100%;
+      height: 69px;
+      background-color: #64c29e;
+      color: #ffffff;
+      text-transform: uppercase;
+   }
+   @media (max-width: 750px){
+      &__body{
+         padding: 50px 0;
+      }
+   }
+   @media (max-width: 500px){
+      &__input{
+         padding: 0 0 8px 0;
+      }
+      &__form{
+         display: block;
+      }
+   }
+}
+
 
 
 //</ОСНОВНОЙ БЛОК>
