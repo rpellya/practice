@@ -20,6 +20,21 @@ function ibg(){
       $('body').toggleClass('lock');
    });
 
+
+   document.getElementById("menu__about").onclick = function(){
+      document.getElementById("about").scrollIntoView({behavior:"smooth"});
+   }
+   document.getElementById("menu__work").onclick = function(){
+      document.getElementById("work").scrollIntoView({behavior:"smooth"});
+   }
+   document.getElementById("menu__shop").onclick = function(){
+      document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+   }
+   document.getElementById("menu__contact").onclick = function(){
+      document.getElementById("footer").scrollIntoView({behavior:"smooth"});
+   }
+
+
    //SLIDERS
    /*
    if($('.slider__body').length>0){

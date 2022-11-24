@@ -20,6 +20,10 @@
    }
    @media (max-width: 767px){
       top: 15px;
+      .icon-menu{
+         position: fixed;
+      }
+      
    }
 }
 .menu {

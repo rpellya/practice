@@ -151,6 +151,9 @@ h1, h2, h3, h4, h5, h6 {
   .header {
     top: 15px;
   }
+  .header .icon-menu {
+    position: fixed;
+  }
 }
 
 .menu__list {
