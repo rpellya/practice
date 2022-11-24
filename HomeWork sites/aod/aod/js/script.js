@@ -26,6 +26,7 @@ function ibg(){
    });
 
 
+   //SCROLLERS
    document.getElementById("menu__about").onclick = function(){
       document.getElementById("about").scrollIntoView({behavior:"smooth"});
    }
@@ -39,6 +40,17 @@ function ibg(){
       document.getElementById("footer").scrollIntoView({behavior:"smooth"});
    }
 
+   //ALERT
+   document.getElementById("input_btn").onclick = function(){
+      if (document.getElementById("input_email").value==="")
+      {
+         alert("Введите вашу почту!");
+      }
+      else
+      {
+         alert("Спасибо за заявку, в ближайшее время с вами свяжутся наши специалисты!");
+      }
+   }
 
    //SLIDERS
    /*

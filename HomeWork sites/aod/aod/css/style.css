@@ -670,6 +670,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #64c29e;
   color: #ffffff;
   text-transform: uppercase;
+  transition: background-color 0.5s;
+}
+.subscribe__btn:hover {
+  background: #367c61;
 }
 @media (max-width: 750px) {
   .subscribe__body {

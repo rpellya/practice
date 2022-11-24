@@ -399,6 +399,10 @@ $fontfamily:"Lato";
       background-color: #64c29e;
       color: #ffffff;
       text-transform: uppercase;
+      transition: background-color 0.5s;
+      &:hover {
+         background: #367c61;
+     }
    }
    @media (max-width: 750px){
       &__body{
