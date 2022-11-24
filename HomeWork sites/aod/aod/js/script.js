@@ -19,6 +19,11 @@ function ibg(){
       $('.menu__body').toggleClass('active');
       $('body').toggleClass('lock');
    });
+   $('.menu__list').click(function(event){
+      $(this).toggleClass('active');
+      $('.menu__body').toggleClass('active');
+      $('body').toggleClass('lock');
+   });
 
 
    document.getElementById("menu__about").onclick = function(){
