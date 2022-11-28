@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside, footer, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "IBM Plex Mono";
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "IBM Plex Mono";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1560px;
+  padding: 30px 0 0 0;
+  margin: 0 auto;
+}
+
+.menu__text {
+  font-size: 16px;
+}
+.menu__eng:first-child::after {
+  background-color: black;
+  content: "";
+  margin: 0px 5px -4px 8px;
+  width: 1px;
+  height: 15px;
+  display: inline-block;
+  transform: rotate(202deg);
+}

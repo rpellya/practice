@@ -1,0 +1,11 @@
+@mixin anim($time,$delay){transition: all $time ease $delay;}
+@mixin anim_cubic($time,$delay){transition:all $time ease $delay;}
+@mixin animate($name,$time,$infinite,$type) {animation: $name $time+s $infinite $type;}
+@mixin rotate($deg){transform:rotate($deg);}
+@mixin scale($num){transform: scale($num);}
+@mixin skew($num){transform: skewX($num);}
+@mixin cnt($h){display: flex; flex-direction: column;height: $h; text-align: center; align-items: stretch; justify-content: center;}
+@mixin tr($x,$y,$z){transform: translate3d($x,$y,$z);}
+@mixin flexbox(){display: flex;}
+@mixin flexboxinline(){display: inline-flex;};
+@mixin flexorder($val){order:($val);};

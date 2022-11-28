@@ -1,0 +1,53 @@
+//<ПОДКЛЮЧАЕМ ШРИФТЫ>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+//</ПОДКЛЮЧАЕМ ШРИФТЫ>
+
+//<ШРИФТЫ ПО УМОЛЧАНИЮ>
+$fontfamily:"IBM Plex Mono";
+//</ШРИФТЫ ПО УМОЛЧАНИЮ>
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
+@import "nullstyle.scss";
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
+
+//<ОБОЛОЧКА>
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
+}
+//</ОБОЛОЧКА>
+
+//<ОСНОВНАЯ СЕТКА>
+.container{
+   max-width: 1560px;
+   padding: 30px 0 0 0;
+   margin: 0 auto;
+
+}
+//</ОСНОВНАЯ СЕТКА>
+
+//<mixin>
+@import "mixin.scss";
+//</mixin>
+
+//<ОСНОВНОЙ БЛОК>
+.menu {
+		&__text {
+         font-size: 16px;
+		}
+		&__eng {
+         &:first-child{
+            &::after{
+            background-color: black;
+            content: '';
+            margin: 0px 5px -4px 8px;
+            width: 1px;
+            height: 15px;
+            display: inline-block;
+            transform: rotate(202deg)
+            }
+         }
+		}
+}
+
+//</ОСНОВНОЙ БЛОК>
