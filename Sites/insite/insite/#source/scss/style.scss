@@ -31,23 +31,56 @@ $fontfamily:"IBM Plex Mono";
 //</mixin>
 
 //<ОСНОВНОЙ БЛОК>
-.menu {
-		&__text {
-         font-size: 16px;
-		}
-		&__eng {
-         &:first-child{
-            &::after{
-            background-color: black;
-            content: '';
-            margin: 0px 5px -4px 8px;
-            width: 1px;
-            height: 15px;
-            display: inline-block;
-            transform: rotate(202deg)
-            }
-         }
-		}
+.header {
+   position: absolute;
+   width: 100%;
+   z-index: 50;
+   left: 0;
+   top: 35px;
+   &__row {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 85px;
+   }
 }
+.menu {
+   &__list {
+      display: flex;
+      li{
+         position: relative;
+         padding: 0 37.5px;
+   }
+
+   &__eng {
+      &:first-child{
+         &::after{
+         background-color: black;
+         content: '';
+         margin: 0px 5px -4px 8px;
+         width: 1px;
+         height: 15px;
+         display: inline-block;
+         transform: rotate(202deg)
+         }
+      }
+   }
+
+   &__link{
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #4d4959;
+   }
+
+   &__logo {
+   }
+
+   &__textb {
+   }
+   }
+}
+
+
 
 //</ОСНОВНОЙ БЛОК>

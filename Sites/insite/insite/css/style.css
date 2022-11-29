@@ -89,10 +89,28 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.menu__text {
-  font-size: 16px;
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  top: 35px;
 }
-.menu__eng:first-child::after {
+.header__row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 85px;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list li {
+  position: relative;
+  padding: 0 37.5px;
+}
+.menu__list__eng:first-child::after {
   background-color: black;
   content: "";
   margin: 0px 5px -4px 8px;
@@ -100,4 +118,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 15px;
   display: inline-block;
   transform: rotate(202deg);
+}
+.menu__list__link {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4d4959;
 }
