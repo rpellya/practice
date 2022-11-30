@@ -38,46 +38,59 @@ $fontfamily:"IBM Plex Mono";
    left: 0;
    top: 35px;
    &__row {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
+      
       height: 85px;
+   }
+   &__logo {
+      position: absolute;
+      left: 50%;
+      top: 0;
    }
 }
 .menu {
    &__list {
       display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   &__lang{
+      display: flex;
+      flex-direction: row;
       li{
          position: relative;
-         padding: 0 37.5px;
-   }
-
-   &__eng {
-      &:first-child{
-         &::after{
-         background-color: black;
-         content: '';
-         margin: 0px 5px -4px 8px;
-         width: 1px;
-         height: 15px;
-         display: inline-block;
-         transform: rotate(202deg)
+         padding: 0 5px;
+      }
+      .menu__link{
+         &:first-child
+         {
+            &::after{
+               background-color: black;
+               content: "";
+               margin: 0px 5px -4px 8px;
+               width: 1px;
+               height: 15px;
+               display: inline-block;
+               transform: rotate(195deg);
+            }
          }
       }
    }
-
    &__link{
       font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: #4d4959;
+      
    }
 
    &__logo {
+      
    }
 
-   &__textb {
-   }
+   &__about{
+      display: flex;
+      flex-direction: row;
+      li{
+         padding: 0 32px;
+      }
+      
    }
 }
 

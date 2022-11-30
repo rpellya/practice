@@ -97,31 +97,43 @@ h1, h2, h3, h4, h5, h6 {
   top: 35px;
 }
 .header__row {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   height: 85px;
+}
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
 }
 
 .menu__list {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.menu__list li {
+.menu__lang {
+  display: flex;
+  flex-direction: row;
+}
+.menu__lang li {
   position: relative;
-  padding: 0 37.5px;
+  padding: 0 5px;
 }
-.menu__list__eng:first-child::after {
+.menu__lang .menu__link:first-child::after {
   background-color: black;
   content: "";
   margin: 0px 5px -4px 8px;
   width: 1px;
   height: 15px;
   display: inline-block;
-  transform: rotate(202deg);
+  transform: rotate(195deg);
 }
-.menu__list__link {
+.menu__link {
   font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #4d4959;
+}
+.menu__about {
+  display: flex;
+  flex-direction: row;
+}
+.menu__about li {
+  padding: 0 32px;
 }
