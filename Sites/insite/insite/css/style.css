@@ -117,11 +117,13 @@ h1, h2, h3, h4, h5, h6 {
 .menu__lang li {
   position: relative;
   padding: 0 5px;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.menu__lang .menu__link:first-child::after {
+.menu__lang li:first-child::before {
   background-color: black;
   content: "";
-  margin: 0px 5px -4px 8px;
+  margin: 0px 0px 0px 10px;
   width: 1px;
   height: 15px;
   display: inline-block;

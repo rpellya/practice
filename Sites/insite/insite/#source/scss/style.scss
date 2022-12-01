@@ -56,17 +56,18 @@ $fontfamily:"IBM Plex Mono";
    &__lang{
       display: flex;
       flex-direction: row;
+
       li{
          position: relative;
          padding: 0 5px;
-      }
-      .menu__link{
+         display: flex;
+         flex-direction: row-reverse;
          &:first-child
          {
-            &::after{
+            &::before{
                background-color: black;
                content: "";
-               margin: 0px 5px -4px 8px;
+               margin: 0px 0px 0px 10px;
                width: 1px;
                height: 15px;
                display: inline-block;
