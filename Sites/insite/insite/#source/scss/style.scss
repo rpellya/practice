@@ -38,13 +38,7 @@ $fontfamily:"IBM Plex Mono";
    left: 0;
    top: 35px;
    &__row {
-      
       height: 85px;
-   }
-   &__logo {
-      position: absolute;
-      left: 50%;
-      top: 0;
    }
 }
 .menu {
@@ -56,14 +50,14 @@ $fontfamily:"IBM Plex Mono";
    &__lang{
       display: flex;
       flex-direction: row;
-
       li{
          position: relative;
          padding: 0 5px;
          display: flex;
-         flex-direction: row-reverse;
+         
          &:first-child
          {
+            flex-direction: row-reverse;
             &::before{
                background-color: black;
                content: "";
@@ -78,11 +72,24 @@ $fontfamily:"IBM Plex Mono";
    }
    &__link{
       font-size: 13px;
-      
    }
 
+   
    &__logo {
-      
+      font-weight: 700;
+      position: relative;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      &::before{
+         content: '';
+         width: 21px;
+         height: 21px;
+         background-color: black;
+         border-radius: 50%;
+         position: absolute;
+         right: 0%;
+         top: -21%;
+         margin: 0 40px 0;
+      }
    }
 
    &__about{
@@ -91,8 +98,8 @@ $fontfamily:"IBM Plex Mono";
       li{
          padding: 0 32px;
       }
-      
    }
+   
 }
 
 
