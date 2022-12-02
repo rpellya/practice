@@ -97,7 +97,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 35px;
 }
 .header__row {
-  height: 85px;
+  height: 29px;
+  max-width: 1200px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px auto;
+  border-bottom: solid;
 }
 
 .menu__list {
@@ -136,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__logo::before {
   content: "";
-  width: 21px;
-  height: 21px;
+  width: 19px;
+  height: 19px;
   background-color: black;
   border-radius: 50%;
   position: absolute;
